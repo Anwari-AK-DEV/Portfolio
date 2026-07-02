@@ -51,4 +51,5 @@ To get a local copy up and running, follow these simple steps.
 
 1. Clone the repository
    ```bash
-   https://github.com/Anwari-AK-DEV/Portfolio
+   https://github.com/Anwari-AK-DEV/Portfolio.git
+   
