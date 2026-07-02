@@ -50,6 +50,6 @@ A single-page website demonstrating smooth parallax scrolling effects created wi
 To get a local copy up and running, follow these simple steps.
 
 1. Clone the repository
-   ```bash
+   ```sh
    https://github.com/Anwari-AK-DEV/Portfolio.git
    
