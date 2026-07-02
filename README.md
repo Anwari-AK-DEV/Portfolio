@@ -3,10 +3,7 @@
 A responsive personal portfolio website developed using HTML5 and CSS3. This project showcases my front-end development skills and features a collection of my recent work.
 
 ## 🔗 Live URL
-**[View Portfolio](https://your-portfolio-link.netlify.app/)**
-
-## 📸 Screenshot
-![Portfolio Preview](./screenshot.png)
+**[View Portfolio](https://anwari-portfolio.netlify.app/)**
 
 ## 🚀 Features
 - **Responsive Design**: Optimized for all devices - mobile, tablet, and desktop
