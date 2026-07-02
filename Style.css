@@ -62,7 +62,7 @@ html {
     text-align: center;
     width: 100%;
     height: 100%;
-    background-image: url('anwari.khatoon.jpeg');
+    background-image: url('AK.jpeg');
     object-fit: cover;
     background-size: cover;
     background-position: center;
@@ -119,13 +119,12 @@ html {
     padding: 20px;
     text-align: center;
     width: 100%;
-    height: 70vh;
+    min-height: 70vh;
     flex-wrap: wrap;
 }
 
 .project-section h1 {
     font-size: 4rem;
-    color: #000000;
     margin-bottom: 20px;
 }
 
@@ -136,27 +135,36 @@ html {
 
 .projects {
     display: flex;
-    gap: 20px;
+    gap: 15px;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100%;
 }
 
-.projects img {
-    width: calc(33.33% - 14px);
-    /* 3 hisse mein baant diya */
-    height: 250px;
+.projects .images {
+    width: 220px;
+}
+
+.projects .images img {
+    width: 220px;
+    height: 220px;
     object-fit: cover;
-    border-radius: 10px;
+    border-radius: 8px;
+    display: block;
 }
 
-/* Mobile */
-@media (max-width: 768px) {
-    .projects {
-        flex-direction: column;
-        /* Neeche-neeche aa jayenge */
-    }
+.projects .images a {
+    margin-top: 8px;
+    font-size: 1.1rem;
+    text-align: center;
+    text-decoration: none;
+    color: black
+}
 
-    .projects img {
-        width: 100%;
-    }
+.projects .images a:hover {
+    color: #3b3bfb;
+    text-decoration: underline;
+    transition: 0.3s;
 }
 
 /* Contact-section */
@@ -186,57 +194,92 @@ p {
     margin-bottom: 20px;
 }
 
-/* ===== Tablet: 768px se 1024px tak ===== */
-@media (max-width: 1024px) {
-    .nav-bar {
-        padding: 15px 30px;
-    }
+.contact-section a {
+    font-size: 1.2rem;
+    text-decoration: none;
+    color: #000000;
+}
 
-    .nav-bar .logo {
+.contact-section a:hover {
+    font-size: 1.2rem;
+    text-decoration: underline;
+    color: #3b3bfb;
+}
+
+/* ========== Mobile Responsive Only ========== */
+@media (max-width: 768px) {
+    .project-section h1 {
         font-size: 2.5rem;
-        margin: 0;
     }
 
-    .nav-bar ul li {
-        font-size: 1.2rem;
+    .project-section h2 {
+        font-size: 1.5rem;
     }
 
-    .hero-section h1 {
-        font-size: 3rem;
+    .projects {
+        gap: 20px;
     }
 
-    .hero-section h2 {
-        font-size: 2rem;
+    .projects .images {
+        width: 100%;
+        max-width: 320px;
     }
 
-    .about-section h1,
-    .project-section h1,
-    .contact-section h1 {
-        font-size: 3rem;
-    }
-
-    .about-section h2,
-    .project-section h2,
-    .contact-section h2 {
-        font-size: 1.8rem;
-    }
-
-    .projects-section .projects {
-        flex-wrap: wrap;
-        /* Projects neeche aa jayenge */
+    .projects .images img {
+        width: 100%;
+        height: 250px;
     }
 }
 
-/* ===== Mobile: 768px se chhota ===== */
+@media (max-width: 480px) {
+    .project-section {
+        padding: 15px;
+    }
+
+    .project-section h1 {
+        font-size: 2rem;
+    }
+
+    .project-section h2 {
+        font-size: 1.2rem;
+    }
+
+    .projects .images img {
+        height: 220px;
+    }
+
+    .projects .images a {
+        font-size: 1rem;
+    }
+}
+
+/* ===== Tablet: 768px se 1024px tak ===== */
+@media (max-width: 1024px) {
+    .project-section {
+        display: flex;
+
+
+        min-height: fit-content;
+    }
+
+    .projects .images {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        max-width: 280px;
+    }
+}
+
+/* ===== Mobile: Less than 768px ===== */
 @media (max-width: 768px) {
     .main-container {
         height: auto;
-        /* 200vh hata do mobile pe */
     }
 
     .nav-bar {
         flex-direction: column;
-        /* Logo upar, links neeche */
         padding: 15px 20px;
         gap: 15px;
     }
@@ -258,7 +301,6 @@ p {
     /* Hero Section */
     .hero-section {
         height: 70vh;
-        /* Mobile pe height kam */
         padding: 40px 15px;
     }
 
@@ -280,7 +322,6 @@ p {
     .project-section,
     .contact-section {
         height: auto;
-        /* Fixed height hatao */
         min-height: 60vh;
         padding: 40px 15px;
     }
@@ -304,10 +345,9 @@ p {
     /* Projects */
     .projects-section .projects {
         flex-direction: row;
-        /* Ek ke neeche ek */
     }
 
-    .projects-section .projects img {
+    .projects-section .projects .images img {
         width: 100%;
         max-width: 320px;
         height: auto;
