@@ -44,12 +44,11 @@ A single-page website demonstrating smooth parallax scrolling effects created wi
 
 **Key Highlights:** Parallax effects, Smooth scrolling, Modern design  
 **Tech Used:** HTML5, CSS3  
-**Live Demo:** [View Project](https://para
-llax-scrolling-by-ak.netlify.app/)
+**Live Demo:** [View Project](https://parallax-scrolling-by-ak.netlify.app/)
 
 ## 📦 Getting Started
 To get a local copy up and running, follow these simple steps.
 
 1. Clone the repository
-   ```sh
-   git clone https://github.com/your-username/your-repo-name.git
+   ```bash
+   https://github.com/Anwari-AK-DEV
